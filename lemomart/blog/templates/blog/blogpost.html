@@ -1,0 +1,50 @@
+{% extends "blog/basic.html" %}
+
+{% block title %}Blog Post{% endblock %}
+
+{% block css %}{% endblock %}
+
+{% block body %} 
+<div class="container mt-5 mb-5">
+   <div class="row g-5">
+      <div class="col-md-8">
+  
+        <article class="blog-post">
+            <h2 class="blog-post-title">{{post.title}}</h2>
+            <p class="blog-post-meta">{{ post.pub_date }} by <a href="https://lemolite.com" about="_blank">Lemolite Technologies LLP</a></p>
+   
+            <p>{{post.desc}}</p>
+            <hr>
+            <h3 class="blog-post-title">{{post.heading1}}</h3>
+            <p>{{post.content1}}</p>
+            
+            <h3 class="blog-post-title">{{post.heading2}}</h3>
+            <p>{{post.content2}}</p>
+            
+            
+        </article>
+  
+      </div>
+  
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="fst">About</h4>
+            <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+          </div>
+  
+          <div class="p-4">
+            <h4 class="fst">Find Us:</h4>
+            <div class="list-unstyled">
+              <span class="me-2" ><a href="#">LinkedIn</a></span>
+              <span class="mx-2" ><a href="#">Twitter</a></span>
+              <span class="mx-2" ><a href="#">Facebook</a></span>
+              <span class="mx-2" ><a href="#">Instagram</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
